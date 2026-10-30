@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rugania Game Park | Experience the Heart of Africa</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #2D3A27;
+            --slate: #475569;
+            --cream: #FDFBF7;
+            --accent: #D4A373;
+        }
+        @layer base {
+            body { 
+                font-family: 'Montserrat', sans-serif;
+                @apply bg-[var(--cream)] text-[var(--primary)];
+            }
+            h1, h2, h3, .serif { 
+                font-family: 'Libre Baskerville', serif; 
+            }
+        }
+        .nav-scrolled {
+            @apply bg-[var(--primary)] shadow-lg py-3;
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(45, 58, 39, 0.4), rgba(45, 58, 39, 0.7));
+        }
+        .editorial-text-shadow {
+            text-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+<script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('bg-transparent', 'py-6');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('bg-transparent', 'py-6');
+            }
+        });
+    </script>
+</head>
+<body class="antialiased">
+<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6 px-8 flex justify-between items-center text-white bg-transparent" id="navbar">
+<div class="flex items-center">
+<img alt="Rugania Game Park Logo" class="h-12 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdFqzJtzltigIS6GPeN8ekVGnPPWZUdQXslLVnqQRglpoegZWLKnrPTSYK82-3FF59tJGKb4Z1xiaDCOYtNMPAonxdwsYRp5XQFZVveShDbQqpuswg6OYTV6aM4ZO2iyqZ4Qz6_QIWqXUgS1DZa9Awl60fYjNFsvqNzLCdEyY8pkrQjike4_8z14gVHKh_Is0Y-7agLHZMsbSgE766lou9U-7yJs7Lf3bjRZFE9D5uzjJKi5zA3dkyu2vC7jv4z5gt10B1ODuPQRwZ"/>
+</div>
+<div class="hidden lg:flex items-center space-x-10 font-medium uppercase tracking-widest text-xs">
+<a class="hover:text-[var(--accent)] transition-colors" href="#">Home</a>
+<a class="hover:text-[var(--accent)] transition-colors" href="#about">About</a>
+<a class="hover:text-[var(--accent)] transition-colors" href="#experiences">Experiences</a>
+<a class="hover:text-[var(--accent)] transition-colors" href="#accommodation">Stays</a>
+<a class="hover:text-[var(--accent)] transition-colors" href="#hunting">Hunting</a>
+<a class="px-6 py-2 border border-white hover:bg-white hover:text-[var(--primary)] transition-all" href="#contact">Contact</a>
+</div>
+<button class="lg:hidden">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<img alt="African Landscape" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgFZHzgm5D43vakvxxYt-Vih0stE0EQijeHEjt__T-XSv3fEN8IpyqUUqjk2KPNGAqsilVEDaHnPBR-WBQrhR6lTvr7dzXmBucfU_rFgtzzqBchlGAvOHpzNqRjmlu7KEMb4DefKiYNjC8MuIkIFkfS0hFgicZ0jVyG_h7ItO0-Bh3-3d8bhCNNrAolIWmr_lLz77_xxEoXoHNEF1R960-grS_jc4jpsO2web3nhhE5HYUXkDt1kZcs25GoqME5whIxOr2z5GxoDqp"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative z-10 text-center text-white px-4 max-w-5xl">
+<p class="uppercase tracking-[0.4em] mb-6 text-sm font-medium text-[var(--accent)]">Established Excellence in the Wild</p>
+<h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight serif">Refined Wilderness, <br/>Unforgettable Journeys</h1>
+<div class="w-24 h-px bg-white/40 mx-auto mb-10"></div>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a class="bg-[var(--accent)] hover:bg-white hover:text-[var(--primary)] text-white px-10 py-5 font-bold transition-all tracking-widest text-xs" href="#experiences">EXPLORE THE WILD</a>
+<a class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-[var(--primary)] text-white px-10 py-5 font-bold transition-all tracking-widest text-xs" href="#accommodation">BOOK YOUR STAY</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">expand_more</span>
+</div>
+</header>
+<section class="py-32 px-6 overflow-hidden" id="experiences">
+<div class="mb-32 text-center">
+<span class="text-[var(--accent)] uppercase tracking-widest text-sm font-bold">Discover</span>
+<h2 class="text-4xl md:text-6xl font-bold mt-4 mb-6 serif">Our Experiences</h2>
+<p class="text-[var(--slate)] max-w-2xl mx-auto leading-relaxed">Immerse yourself in the authentic heartbeat of South Africa with curated adventures designed for the discerning explorer.</p>
+</div>
+<div class="max-w-7xl mx-auto space-y-48">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+<div class="w-full lg:w-3/5 relative group">
+<div class="absolute -inset-4 bg-[var(--accent)] opacity-10 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700"></div>
+<div class="relative overflow-hidden shadow-2xl">
+<img alt="Wildlife Safari" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhKkpYpKgdAiHOcNgK124Art60rkWYZDfNlNjZxVCx9kRzlSCSeOcjX0dzmer9jPWf6z50hEGAsHw8LKjZ9KFcyf0b2he4mFAWBQcNUdd8G5mpxNQVRph2iPbq553dAbu81j8u9QgKB3VCEnPYjAFlj5u4Yt9hQXV0XNg0xAVpdrjr2ALYLwIdj2UzMbT1Xlv_BqGhFF0qsa2f3uh005F57h-q2bgfkRJcLz66y22R_1aqPQZu1-uESK_dJH9ZAOGiKlUNQ88rSpk"/>
+</div>
+</div>
+<div class="w-full lg:w-2/5 px-4">
+<span class="text-[var(--accent)] text-6xl font-serif italic opacity-30 block mb-4">01</span>
+<h3 class="text-4xl mb-6 serif leading-tight">Wildlife Safaris</h3>
+<p class="text-[var(--slate)] leading-relaxed mb-8 text-lg">Expert-led journeys through 4,000 hectares of malaria-free wilderness, witnessing the majesty of Africa's fauna.</p>
+<a class="inline-block text-xs font-bold uppercase tracking-widest text-[var(--primary)] border-b-2 border-[var(--accent)] pb-2 hover:text-[var(--accent)] transition-colors" href="#">EXPLORE SAFARI</a>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-24">
+<div class="w-full lg:w-3/5 relative group">
+<div class="absolute -inset-4 bg-[var(--primary)] opacity-10 -translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700"></div>
+<div class="relative overflow-hidden shadow-2xl">
+<img alt="Tsoveca Resort" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHhnDlGXFAZa8OMpqce54M5t46bkKCGJzDYzWTQpNS-40WhovCDxvMNLmtqsnL3_HiAH4KXzTbLWFb07__-p_xYRnnj9Q1tYkTtwuICizf5-9zyjlbHucLSDonyqJmg960pfSHBzMW_rFNuvAibyALWanGniNI-eC9IVN1hWB-YGxCNJZbKwGu48ijxuZuz_b68EzxkFYDx6-L_jCdIJxhs7DtIZwWhQMc2gQbq3i2PCjO7n6wNidfYefiMgLgB7_HjF_QaKzcAyXz"/>
+</div>
+</div>
+<div class="w-full lg:w-2/5 px-4 text-left lg:text-right">
+<span class="text-[var(--accent)] text-6xl font-serif italic opacity-30 block mb-4">02</span>
+<h3 class="text-4xl mb-6 serif leading-tight">Tsoveca Resort</h3>
+<p class="text-[var(--slate)] leading-relaxed mb-8 text-lg">Luxury and tranquility meet on a scenic rise, offering sweeping panoramas for those seeking true relaxation.</p>
+<a class="inline-block text-xs font-bold uppercase tracking-widest text-[var(--primary)] border-b-2 border-[var(--accent)] pb-2 hover:text-[var(--accent)] transition-colors" href="#">VIEW RESORT</a>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+<div class="w-full lg:w-3/5 relative group">
+<div class="absolute -inset-4 bg-[var(--accent)] opacity-10 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700"></div>
+<div class="relative overflow-hidden shadow-2xl">
+<img alt="Hunting Safari" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaIgTNRXri7033-5Vnd4ye05_zDDoIvSvJDeDosjO5-9SXW0f74Rqy7ADk_kfgWkH9vw_1oLEAFf7uidJNS6Aax3V6VrmrbmIdhJ8VwEXH0QzNGhaDi41__nAvPS4touV63WUXHDQ4DLmWX_f_zkPRCkVrdHyf9YpUFceg_zLntlDYBMUwH2_pYOBa1yCZcGagBRdcag11gAQxgfB1bAQI5ivioPvFTsZnJ9mVthneM3hkCphuq-FERTsQaae3ye5soyWzaB8ioTMs"/>
+</div>
+</div>
+<div class="w-full lg:w-2/5 px-4">
+<span class="text-[var(--accent)] text-6xl font-serif italic opacity-30 block mb-4">03</span>
+<h3 class="text-4xl mb-6 serif leading-tight">Hunting Safaris</h3>
+<p class="text-[var(--slate)] leading-relaxed mb-8 text-lg">Ethical rifle and bow hunting experiences across diverse topographies, catering to the professional sportsman.</p>
+<a class="inline-block text-xs font-bold uppercase tracking-widest text-[var(--primary)] border-b-2 border-[var(--accent)] pb-2 hover:text-[var(--accent)] transition-colors" href="#">LEARN MORE</a>
+</div>
+</div>
+</div>
+</section>
+<section class="relative bg-[var(--primary)] py-40 overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="Texture" class="w-full h-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgFZHzgm5D43vakvxxYt-Vih0stE0EQijeHEjt__T-XSv3fEN8IpyqUUqjk2KPNGAqsilVEDaHnPBR-WBQrhR6lTvr7dzXmBucfU_rFgtzzqBchlGAvOHpzNqRjmlu7KEMb4DefKiYNjC8MuIkIFkfS0hFgicZ0jVyG_h7ItO0-Bh3-3d8bhCNNrAolIWmr_lLz77_xxEoXoHNEF1R960-grS_jc4jpsO2web3nhhE5HYUXkDt1kZcs25GoqME5whIxOr2z5GxoDqp"/>
+</div>
+<div class="max-w-6xl mx-auto px-6 relative z-10">
+<div class="flex flex-col items-center text-center text-white">
+<span class="material-symbols-outlined text-8xl text-[var(--accent)]/30 mb-12">format_quote</span>
+<blockquote class="mb-16">
+<p class="text-3xl md:text-5xl italic leading-tight serif max-w-5xl mx-auto editorial-text-shadow">
+                        "An unparalleled experience of the South African bush. The attention to detail in the lodges and the expertise of the rangers made our stay truly world-class."
+                    </p>
+</blockquote>
+<div class="flex flex-col items-center">
+<div class="w-24 h-px bg-[var(--accent)] mb-8"></div>
+<span class="uppercase tracking-[0.3em] text-lg font-bold mb-2">Jonathan Van Wyk</span>
+<span class="text-sm text-white/50 tracking-widest font-medium">EXECUTIVE EXPLORER, CAPE TOWN</span>
+</div>
+</div>
+</div>
+<div class="absolute right-0 bottom-20 w-1/4 h-px bg-white/10 hidden lg:block"></div>
+</section>
+<section class="py-32 px-6" id="accommodation">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="text-[var(--accent)] uppercase tracking-widest text-sm font-bold">Reside</span>
+<h2 class="text-4xl md:text-5xl font-bold mt-4 serif">Bespoke Living</h2>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest border-2 border-[var(--primary)] px-8 py-4 hover:bg-[var(--primary)] hover:text-white transition-all" href="#">Full Price List</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white group overflow-hidden shadow-sm hover:shadow-2xl transition-all">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Lapa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMlkXMEWpjLLwrTa03JGvvjPVWhmJiMDeNlKirutgFTKMZbyOGOwvl1eAdcir1nnOS6uf2wh0XKLhdDBoraYVDKmN0qVv_Ct_usi0upBOkIjyheOWhMeBa9yj5ruu0hWmsmlfs65JfZP8bkr52GwLUJ38p4fUiGqLdAQVOPWNgrgVFah4IX23cw6YDyO2T2x2mJcAQNTYTMty8vEx9nT1CDcPkrC_5Nc89w99nw204DryBfl7TqqfVPDbQux1hyu4AvvapHo-IvIul"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3 serif">Lapa</h4>
+<p class="text-xs text-[var(--slate)] mb-6 leading-relaxed">Rustic freedom without the noise of the city. A true bush hide-away.</p>
+<div class="flex justify-between items-center pt-6 border-t border-gray-100">
+<span class="text-sm font-bold text-[var(--primary)]">R100.00 <span class="text-[10px] text-gray-400 font-normal">/pp</span></span>
+<button class="text-[10px] font-bold tracking-widest uppercase hover:text-[var(--accent)]">Book Now</button>
+</div>
+</div>
+</div>
+<div class="bg-white group overflow-hidden shadow-sm hover:shadow-2xl transition-all">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Aalwynpark" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MLv_eKmGqL0L6boz5H7kDfvhbHUTHrTxdqV-TGYgrM4qc1SSMLMCDitCvmzN05rtoeN0WTfMhjRjea3Td7MeBsfvuFJXgxtq1CTEOfLy74JU6DdMu3e6drhQVmcYlRj7mUnjhBxycURyBUw_8YI-dDMC1WLP52FmjCXC4CMRvjR6hW7KSFRnup8UTdxSN7cwP-Ffuim56hR5S-7dbUGnRoqUgUqobMHx0iLsf9ATrJzc0ubxs1BOrrXFoEnZbeY5VLFGmKBsFzXD"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3 serif">Aalwynpark</h4>
+<p class="text-xs text-[var(--slate)] mb-6 leading-relaxed">Luxury lodge for 16 guests with sweeping views of the valley.</p>
+<div class="flex justify-between items-center pt-6 border-t border-gray-100">
+<span class="text-sm font-bold text-[var(--primary)]">R130.00 <span class="text-[10px] text-gray-400 font-normal">/pp</span></span>
+<button class="text-[10px] font-bold tracking-widest uppercase hover:text-[var(--accent)]">Book Now</button>
+</div>
+</div>
+</div>
+<div class="bg-white group overflow-hidden shadow-sm hover:shadow-2xl transition-all">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Naauwkloof" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHQmEzpQXDdYtHKmWDEbF5mWW_ZR7dIbHdgIcnFibAVxf8vIl7s4GbTwMUNQqlftVtt4evj6tvakpAnlW6rnEW0ar96xXRjCmrwIYZR_IZikDyg9-wwDb7Et0qa0ufiYZdpOXnNE7dltojZGtA0LLxAXQI92mL7QGaq0FtQFDLuvxERSJZASLNxzj2rQ0F__gS-G2o7WU9cxGFhHPy2Wnd8qMaUFJxY5Qu7ER9-sDpyo416QYOky-KCOUi2Q3Wj4BDE0aTbXOImGSb"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3 serif">Naauwkloof</h4>
+<p class="text-xs text-[var(--slate)] mb-6 leading-relaxed">A traditional farmhouse experience with views that reach the horizon.</p>
+<div class="flex justify-between items-center pt-6 border-t border-gray-100">
+<span class="text-sm font-bold text-[var(--primary)]">R130.00 <span class="text-[10px] text-gray-400 font-normal">/pp</span></span>
+<button class="text-[10px] font-bold tracking-widest uppercase hover:text-[var(--accent)]">Book Now</button>
+</div>
+</div>
+</div>
+<div class="bg-white group overflow-hidden shadow-sm hover:shadow-2xl transition-all">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Picturesque Farmhouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiAgnZiLUWG8mzngMCXgHygRdjASiKdO_hHhXA7pX-ymBg9zntNUnO-kdTlyoi-h2PJVswFLWC05xQ436uYRQ3BOn8--Z8we4CdlKUAMgIhQoETm6z_JzTayS1s2wl4O9PJ_ZdQYKFoGdXnKl0NCZI7inPUsIif4LW3KO7Wg1NRL9nVhVkmunpRk-ARZcXi1e-vWZY3iGQiQo2lOtDqx1bDuIY8eSdpB0sLbeEjle3HfTiJoJz5v5xXwrphlWijh3CirxDXgglxIB3"/>
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3 serif">Heritage House</h4>
+<p class="text-xs text-[var(--slate)] mb-6 leading-relaxed">Beautifully restored farmhouse evoking memories of a golden era.</p>
+<div class="flex justify-between items-center pt-6 border-t border-gray-100">
+<span class="text-sm font-bold text-[var(--primary)]">R130.00 <span class="text-[10px] text-gray-400 font-normal">/pp</span></span>
+<button class="text-[10px] font-bold tracking-widest uppercase hover:text-[var(--accent)]">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-[var(--primary)] text-white/70 pt-32 pb-12 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-white/10 pb-20">
+<div>
+<img alt="Rugania Logo" class="h-16 mb-8 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdFqzJtzltigIS6GPeN8ekVGnPPWZUdQXslLVnqQRglpoegZWLKnrPTSYK82-3FF59tJGKb4Z1xiaDCOYtNMPAonxdwsYRp5XQFZVveShDbQqpuswg6OYTV6aM4ZO2iyqZ4Qz6_QIWqXUgS1DZa9Awl60fYjNFsvqNzLCdEyY8pkrQjike4_8z14gVHKh_Is0Y-7agLHZMsbSgE766lou9U-7yJs7Lf3bjRZFE9D5uzjJKi5zA3dkyu2vC7jv4z5gt10B1ODuPQRwZ"/>
+<p class="text-sm leading-relaxed mb-8">
+                    A 4,000ha malaria-free sanctuary in the heart of the North West Province. Preserving the heritage of South Africa’s wild spaces since our founding.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-[var(--accent)] hover:border-[var(--accent)] transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-10 h-10 border border-white/20 flex items-center justify-center rounded-full hover:bg-[var(--accent)] hover:border-[var(--accent)] transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-8">Navigation</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">About Our Park</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Leisure &amp; Safaris</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Hunting Packages</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-8">Reach Us</h5>
+<ul class="space-y-6 text-sm">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[var(--accent)]">location_on</span>
+<span>Rustenburg District, <br/>North West Province, RSA</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[var(--accent)]">call</span>
+<span>+27 (0) 14 543 2736</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[var(--accent)]">mail</span>
+<span>bookings@rugania.co.za</span>
+</li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-8">Stay Updated</h5>
+<p class="text-xs mb-6">Join our newsletter for exclusive updates and seasonal offers.</p>
+<form class="flex border-b border-white/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder-white/40" placeholder="Your Email" type="email"/>
+<button class="material-symbols-outlined text-[var(--accent)]">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest">
+<p>© 2024 Rugania Game Park. Crafted for Excellence.</p>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-10 right-10 bg-[var(--accent)] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center" href="#contact">
+<span class="material-symbols-outlined">calendar_month</span>
+</a>
+
+</body></html>
