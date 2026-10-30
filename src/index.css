@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rugania-green: #2D3A27;
+  --color-rugania-green-light: #3D4A37;
+  --color-rugania-gold: #D4A373;
+  --color-rugania-gold-hover: #E8B685;
+  --color-rugania-cream: #FDFBF7;
+  --color-rugania-slate: #475569;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+}
+
+body {
+  background-color: var(--color-rugania-cream);
+  color: var(--color-rugania-green);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  line-height: 1.6;
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight font-medium;
+  }
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-[0_8px_32px_0_#0000001a];
+}
+
+.glass-dark {
+  @apply bg-rugania-green/80 backdrop-blur-lg border border-white/10 shadow-[0_8px_32px_0_#00000033];
+}
+
+.nav-scrolled {
+  @apply bg-rugania-green/95 backdrop-blur-xl shadow-xl py-3 border-b border-white/5;
+}
+
+.text-editorial {
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  @apply bg-rugania-gold hover:bg-rugania-gold-hover text-white px-8 py-4 font-bold transition-all duration-300 tracking-[0.2em] text-[11px] uppercase shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-outline {
+  @apply bg-transparent border border-white/40 hover:bg-white hover:text-rugania-green text-white px-8 py-4 font-bold transition-all duration-300 tracking-[0.2em] text-[11px] uppercase backdrop-blur-sm;
+}
+
+.bg-paper-texture {
+  position: relative;
+  background-color: var(--color-rugania-cream);
+}
+
+.bg-paper-texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.bg-paper-texture > * {
+  position: relative;
+  z-index: 2;
+}

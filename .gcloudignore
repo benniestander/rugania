@@ -1,0 +1,7 @@
+.git
+.agent
+.gemini
+node_modules
+dist
+Chief_of_Staff_Report.md
+implementation_plan.md
